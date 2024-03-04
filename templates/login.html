@@ -6,7 +6,7 @@
     <title>Neuroscan</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="../static/css/login-style.css">
-
+    <link rel="icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/brain-5202527-4341300.png?f=webp">
 
 </head>
 
@@ -26,7 +26,7 @@
                         <div class="contact6_content">
                             <div class="margin-bottom margin-medium">
                                 <div class="margin-bottom margin-small">
-                                    <h1 class="text header form">Be one of the first to join</h1>
+                                    <h1 class="text header form">Features & Benefits</h1>
                                     <div class="html-embed-4 w-embed">
                                         <style>
                                             .text {
@@ -195,9 +195,8 @@
                                         </style>
                                     </div>
                                 </div>
-                                <p class="text-size-medium">Unlike conventional support systems, Elapse AI offers a
-                                    self-evolving customer service experience. No more repetitive inquiries or
-                                    inconsistent answers.<br /></p>
+                                <p class="text-size-medium">This project aims to develop a ML based solution for brain tumor detection, with the potential to assist
+                                healthcare professionals in accurate and timely diagnosis.<br /></p>
                             </div>
                             <div class="contact6_contact-list">
                                 <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e5a-be340f94" class="contact6_item">
@@ -211,7 +210,7 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <div class="text-block-4">Fully automate your customer support.</div>
+                                    <div class="text-block-4">Early and Accurate Diagnosis</div>
                                 </div>
                                 <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e5f-be340f94" class="contact6_item">
                                     <div class="contact6_icon-wrapper">
@@ -224,7 +223,7 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <div class="text-block-4">Uncover your clients needs and wants.</div>
+                                    <div class="text-block-4">Time and Cost Efficiency</div>
                                 </div>
                                 <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e64-be340f94" class="contact6_item">
                                     <div class="contact6_icon-wrapper">
@@ -237,32 +236,58 @@
                                                 </path>
                                             </svg></div>
                                     </div>
-                                    <div class="text-block-4">Focus more on building whats required.</div>
+                                    <div class="text-block-4">Improved Detection Accuracy</div>
+                                </div>
+                                <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e64-be340f94" class="contact6_item">
+                                    <div class="contact6_icon-wrapper">
+                                        <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx"
+                                                width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="m10 15.586l-3.293-3.293l-1.414 1.414L10 18.414l9.707-9.707l-1.414-1.414z">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="text-block-4">Assistive Tool for Healthcare Professionals</div>
+                                </div>
+                                <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e64-be340f94" class="contact6_item">
+                                    <div class="contact6_icon-wrapper">
+                                        <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx"
+                                                width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="m10 15.586l-3.293-3.293l-1.414 1.414L10 18.414l9.707-9.707l-1.414-1.414z">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="text-block-4">Research Advancement</div>
                                 </div>
                             </div>
                         </div>
                         <div id="waitlist" class="contact6_form-block w-form">
-                            <form class="contact6_form" action="{{url_for('login')}}" method="post">
-                                <div class="form_field-2col">
-                                    <div class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="First-Name" placeholder="First name"
-                                            type="text" id="First-Name" required="" /></div>
-                                    <div class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="Last-Name" placeholder="Last name" type="text"
-                                            id="Last-Name" required="" /></div>
-                                </div>
+                            {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                            {% for category, message in messages %}
+                            <center>
+                                <p style="color: white; font-size: 1rem;" class="alert alert-{{ category }}">{{
+                                    message }}</p>
+                            </center>
+                            {% endfor %}
+                            {% endif %}
+                            {% endwith %}
+                            <form class="contact6_form" style="margin-top: 20px;" action="{{url_for('login')}}" method="post">
+
                                 <div class="form_field-2col is-mobile-1col">
-                                    <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e75-be340f94" class="form_field-wrapper"><input
-                                            class="form_input w-input" maxlength="256" name="Email" placeholder="User Email" type="email" id="Email"
-                                            required="" /></div>
                                     <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e75-be340f94"
                                         class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="username"  placeholder="Username" type="text"
-                                            id="Email" required="" /></div>
+                                            name="Email" placeholder="User Email" type="email" id="Email" required="" />
+                                    </div>
+                                    <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e75-be340f94"
+                                        class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
+                                            name="username" placeholder="Username" type="text" id="Email" required="" />
+                                    </div>
                                     <div id="w-node-_9a509880-c78e-2b30-f188-aa3115c797db-be340f94"
                                         class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="password" placeholder="Password" type="password"
-                                            id="Website" required="" /></div>
+                                            name="password" placeholder="Password" type="password" id="Website"
+                                            required="" /></div>
                                 </div>
                                 <!-- <div class="form_field-wrapper"><textarea
                                         placeholder="Briefly describe why you want to join the waitlist."
@@ -271,9 +296,10 @@
                                         class="form_input is-text-area w-input"></textarea></div> -->
                                 <div class="margin-bottom margin-xsmall"><label id="Contact-6-Checkbox"
                                         class="w-checkbox form_checkbox">
-                                        <span
-                                            for="Contact-6-Checkbox"
-                                            class="form_checkbox-label text-size-small w-form-label">Don't have an account ? </span><a href="{{url_for('register')}}"><span style="color: #fff; margin-left: 10px;">Register</span></a>
+                                        <span for="Contact-6-Checkbox"
+                                            class="form_checkbox-label text-size-small w-form-label">Don't have an
+                                            account ? </span><a href="{{url_for('register')}}"><span
+                                                style="color: #fff; margin-left: 10px;">Register</span></a>
                                     </label></div>
                                 <div id="w-node-_63e60232-19fb-7271-63f9-670cc49dbe0b-be340f94">
                                     <div class="glowing-wrapper glowing-wrapper-active">
@@ -291,7 +317,7 @@
                                     </div>
                                 </div>
                             </form>
-                           
+
                         </div>
                     </div>
                 </div>

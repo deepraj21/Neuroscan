@@ -432,7 +432,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: -19px;
+    margin-bottom: 15px;
     font-weight: 700
 }
 
@@ -2546,7 +2546,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .nav-container._2 {
-    height: 4rem
+    height: 7rem
 }
 
 .wrap-v-large {

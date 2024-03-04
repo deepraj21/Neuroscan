@@ -15,6 +15,7 @@ from tqdm import tqdm
 import requests
 import plotly.graph_objects as go
 import urllib.request
+import json
 
 app = Flask(__name__)
 
@@ -33,6 +34,11 @@ class User(db.Model):
 def create_tables():
     with app.app_context():
         db.create_all()
+        
+UPLOAD_FOLDER = 'uploads'
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'jpg', 'jpeg', 'png'}
@@ -119,13 +125,41 @@ def logout():
     session.pop('user_id', None)
     return redirect(url_for('index'))
 
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashboard.html')
+# @app.route('/dashboard')
+# def dashboard():
+#     return render_template("dashboard.html")
 
-@app.route('/about')
-def about():
-    return 'Made with love by Deepraj'
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    username = None
+    if 'user_id' in session:
+        user = User.query.get(session['user_id'])
+        username = user.username
+        if 'file' not in request.files:
+            return render_template('dashboard.html', error='No file part')
+        file = request.files['file']
+
+        if file.filename == '':
+            return render_template('dashboard.html', error='No selected file')
+
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(filepath)
+
+            # Call the prediction function
+            result, confidence = prediction(filepath)
+            
+            # Create a JSON representation of the confidence data
+            confidence_data = [{'Metric': 'Confidence', 'Value': confidence}]
+            confidence_json = json.dumps(confidence_data)
+
+            return render_template('dashboard.html', result=result, confidence=confidence, image=filename,username=username,plot_data=confidence_json)
+
+        else:
+            return render_template('dashboard.html', error='Invalid file format')
+        # return render_template('dashboard.html',username=username)
+    return render_template('login.html')
 
 if __name__ == '__main__':
     create_tables()
