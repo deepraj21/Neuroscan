@@ -50,4 +50,15 @@ python app.py
 
 ## Webapp Preview
 
+![Screenshot 2024-03-05 000442](https://github.com/deepraj21/Neuroscan/assets/83288891/d5e1d2da-4492-404c-aba5-7918a30c639f)
+
+![Screenshot 2024-03-05 000526](https://github.com/deepraj21/Neuroscan/assets/83288891/309aa7e4-361e-4f31-9211-dbab6cf1adcd)
+
+![Screenshot 2024-03-05 000539](https://github.com/deepraj21/Neuroscan/assets/83288891/f2576b66-957b-46f2-bac9-832f4132b795)
+
+![Screenshot 2024-03-05 000621](https://github.com/deepraj21/Neuroscan/assets/83288891/c35d0c68-4477-4751-8283-711957b27d0f)
+
+![Screenshot 2024-03-05 000639](https://github.com/deepraj21/Neuroscan/assets/83288891/01d372e0-458f-4fa9-8506-5690e2d9b20e)
+
+![Screenshot 2024-03-05 000654](https://github.com/deepraj21/Neuroscan/assets/83288891/3401ccec-5a16-47d1-aab3-0d82591006d7)
 
