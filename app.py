@@ -57,8 +57,6 @@ testing_dir = os.path.join(base_dir, 'testing')
 
 train_generator, validation_generator, test_generator = train_val_generators(training_dir, validation_dir, testing_dir)
 
-
-# Load the trained model
 model = tf.keras.models.load_model('brain_tumor.h5')
 
 def prediction(YOUR_IMAGE_PATH):
