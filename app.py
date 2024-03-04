@@ -37,7 +37,7 @@ def register():
             db.session.add(user)
             db.session.commit()
             session['user_id'] = user.id
-            return redirect(url_for('index'))
+            return redirect(url_for('login'))
         except IntegrityError:
             db.session.rollback()
             flash('Username already exists. Please choose a different username.', 'error')
@@ -53,7 +53,7 @@ def login():
         user = User.query.filter_by(username=username, password=password).first()
         if user:
             session['user_id'] = user.id
-            return redirect(url_for('index'))
+            return redirect(url_for('dashboard'))
         else:
             flash('Wrong username or password. Please try again.', 'error')
     return render_template('login.html')
@@ -62,6 +62,10 @@ def login():
 def logout():
     session.pop('user_id', None)
     return redirect(url_for('index'))
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
 
 @app.route('/about')
 def about():

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Neuroscan</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/login-style.css">
 
 
 </head>
@@ -256,29 +256,29 @@
                                 <div class="form_field-2col is-mobile-1col">
                                     <div id="w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3e75-be340f94"
                                         class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="Email" data-name="Email" placeholder="Work email" type="email"
+                                            name="Email"  placeholder="user Email" type="email"
                                             id="Email" required="" /></div>
                                     <div id="w-node-_9a509880-c78e-2b30-f188-aa3115c797db-be340f94"
                                         class="form_field-wrapper"><input class="form_input w-input" maxlength="256"
-                                            name="Website" data-name="Website" placeholder="Website URL" type="text"
+                                            name="username" placeholder="Username" type="text"
                                             id="Website" required="" /></div>
+                                            <div id="w-node-_9a509880-c78e-2b30-f188-aa3115c797db-be340f94" class="form_field-wrapper"><input
+                                                    class="form_input w-input" maxlength="256" name="password" placeholder="Password" type="password" id="Website"
+                                                    required="" /></div>
                                 </div>
-                                <div class="form_field-wrapper"><textarea
+                                <!-- <div class="form_field-wrapper"><textarea
                                         placeholder="Briefly describe why you want to join the waitlist."
                                         maxlength="5000" id="Contact-6-Message" name="Contact-6-Message"
                                         data-name="Contact 6 Message" required=""
-                                        class="form_input is-text-area w-input"></textarea></div>
-                                <div class="margin-bottom margin-xsmall"><label id="Contact-6-Checkbox"
+                                        class="form_input is-text-area w-input"></textarea></div> -->
+                                <!-- <div class="margin-bottom margin-xsmall"><label id="Contact-6-Checkbox"
                                         class="w-checkbox form_checkbox">
                                         <div
-                                            class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon">
-                                        </div><input type="checkbox" id="Contact 6 Checkbox" name="Contact-6-Checkbox"
-                                            data-name="Contact 6 Checkbox"
-                                            style="opacity:0;position:absolute;z-index:-1" /><span
-                                            for="Contact-6-Checkbox"
-                                            class="form_checkbox-label text-size-small w-form-label">Let me know if
-                                            there’s a chance to get access before launch.</span>
-                                    </label></div>
+                                            class="w-checkbox-input w-checkbox-input--inputType-custom form_checkbox-icon"> -->
+                                        <div class="margin-bottom margin-xsmall"><label id="Contact-6-Checkbox" class="w-checkbox form_checkbox">
+                                                <span for="Contact-6-Checkbox" class="form_checkbox-label text-size-small w-form-label">Have an account ?
+                                                </span><a href="{{url_for('login')}}"><span style="color: #fff; margin-left: 10px;">Login</span></a>
+                                            </label></div>
                                 <div id="w-node-_63e60232-19fb-7271-63f9-670cc49dbe0b-be340f94">
                                     <div class="glowing-wrapper glowing-wrapper-active">
                                         <div class="glowing-wrapper-animations">
@@ -289,9 +289,9 @@
                                         </div>
                                         <div class="glowing-wrapper-borders-masker">
                                             <div class="glowing-wrapper-borders"></div>
-                                        </div><input type="submit" data-wait="Please wait..." id="submit-step"
+                                        </div><input type="submit"id="submit-step"
                                             class="button-3 w-node-ea8ac0a1-da93-c9b0-57d6-b655725b3eaa-be340f94 w-button"
-                                            value="Join the waitlist" />
+                                            value="Register" />
                                     </div>
                                 </div>
                             </form>
