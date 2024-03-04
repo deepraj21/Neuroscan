@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@200&family=Spline+Sans+Mono:ital,wght@1,700&display=swap');
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -119,7 +121,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 1em
 }
 
@@ -214,7 +216,7 @@ th {
 }
 
 @font-face {
-    font-family: webflow-icons;
+    font-family: 'Poppins', sans-serif;
     src: url(data:application/x-font-ttf;charset=utf-8;base64,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)format("truetype");
     font-weight: 400;
     font-style: normal
@@ -230,7 +232,7 @@ th {
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    font-family: webflow-icons !important
+    font-family: 'Poppins', sans-serif;
 }
 
 .w-icon-slider-right:before {
@@ -271,7 +273,7 @@ body {
     color: #333;
     background-color: #fff;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 20px
 }
@@ -350,7 +352,7 @@ html[data-w-dynpage] [data-w-cloak] {
     box-shadow: none;
     opacity: 1;
     direction: ltr;
-    font-family: inherit;
+    font-family: 'Poppins', sans-serif;
     font-weight: inherit;
     color: inherit;
     font-size: inherit;
@@ -428,12 +430,12 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 10px;
+    margin-bottom: -19px;
     font-weight: 700
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top:20px;
     font-size: 38px;
     line-height: 44px
 }
@@ -1139,7 +1141,7 @@ textarea.w-select {
 .w-widget-twitter-count-shim .w-widget-twitter-count-inner {
     text-align: center;
     color: #999;
-    font-family: serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     line-height: 12px;
     position: relative
@@ -1548,7 +1550,7 @@ textarea.w-select {
     -webkit-tap-highlight-color: transparent;
     background: rgba(0, 0, 0, .9);
     outline: 0;
-    font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
@@ -2556,7 +2558,7 @@ textarea.w-select {
     color: #ececec;
     text-align: left;
     padding: 8px 4px;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
@@ -2658,7 +2660,7 @@ textarea.w-select {
 }
 
 .paragraph-large.text-weight-semi-bold {
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-weight: 600
 }
 
@@ -3461,7 +3463,7 @@ textarea.w-select {
 .h1-heading {
     color: #fff;
     letter-spacing: -.04em;
-    font-family: Lato, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: 1.15
@@ -3579,7 +3581,7 @@ textarea.w-select {
     color: #fff;
     text-align: left;
     margin-bottom: 20px;
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 1rem
 }
 
@@ -3841,7 +3843,7 @@ textarea.w-select {
     background-clip: text;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
     font-weight: 400;
     line-height: 1.2
@@ -4035,7 +4037,7 @@ textarea.w-select {
 .caption-3.uppercase.text-color-gray-700 {
     color: #858585;
     color: #858585;
-    font-family: neue-haas-grotesk-text, sans-serif
+font-family: 'Poppins', sans-serif;
 }
 
 .caption-3.text-color-gray-300 {
@@ -4043,7 +4045,7 @@ textarea.w-select {
 }
 
 .caption-3.text-color-red-500 {
-    font-family: neue-haas-grotesk-text, sans-serif
+font-family: 'Poppins', sans-serif;
 }
 
 .caption-3.text-color-purple-500 {
@@ -4190,7 +4192,7 @@ textarea.w-select {
 .pr {
     color: #c5c5c5;
     letter-spacing: -.02em;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5
@@ -4199,7 +4201,7 @@ textarea.w-select {
 .pr.whiter {
     color: #ececec;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-display, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem
 }
 
@@ -4232,7 +4234,7 @@ textarea.w-select {
 }
 
 .small {
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400
 }
@@ -4346,7 +4348,7 @@ textarea.w-select {
 
 .paragraph-regular-2.text-color-gray-700 {
     color: #858585;
-    font-family: neue-haas-grotesk-text, sans-serif
+font-family: 'Poppins', sans-serif;
 }
 
 .black-bg {
@@ -4621,7 +4623,7 @@ textarea.w-select {
     color: #fff;
     letter-spacing: -.02em;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px
@@ -4639,7 +4641,7 @@ textarea.w-select {
     color: #ababab;
     letter-spacing: -.02em;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 32px
 }
@@ -4719,7 +4721,7 @@ textarea.w-select {
     text-transform: none;
     margin-top: 1rem;
     margin-bottom: 12px;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.8
@@ -5485,7 +5487,7 @@ textarea.w-select {
 
 .paragraph-small-6.text-color-gray-500 {
     color: #ababab;
-    font-family: neue-haas-grotesk-text, sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-color-blue-500 {
@@ -5505,7 +5507,7 @@ textarea.w-select {
     color: #ababab;
     letter-spacing: -.02em;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem
 }
@@ -5540,7 +5542,7 @@ textarea.w-select {
 
 .paragraph-small-7.text-color-gray-700 {
     color: #858585;
-    font-family: neue-haas-grotesk-text, sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 .icon-regular-7 {
@@ -5569,7 +5571,7 @@ textarea.w-select {
     color: #ababab;
     letter-spacing: -.02em;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 32px
 }
@@ -5591,7 +5593,7 @@ textarea.w-select {
 }
 
 .paragraph-regular-4.text-weight-semi-bold {
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700
 }
 
@@ -5668,7 +5670,7 @@ textarea.w-select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     position: relative
 }
@@ -5741,7 +5743,7 @@ textarea.w-select {
 .layout417_title {
     color: #fff;
     white-space: nowrap;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 10rem;
     font-weight: 400
 }
@@ -5800,7 +5802,7 @@ textarea.w-select {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 400
 }
@@ -5817,7 +5819,7 @@ textarea.w-select {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 400;
     line-height: 1.25
@@ -6056,7 +6058,7 @@ textarea.w-select {
 .author-title {
     color: #fff;
     letter-spacing: -.02em;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: .87rem;
     font-weight: 500
 }
@@ -6073,7 +6075,7 @@ textarea.w-select {
     color: #fff;
     letter-spacing: -.04em;
     margin-bottom: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: .87rem;
     line-height: 32px
 }
@@ -6144,7 +6146,7 @@ textarea.w-select {
 .author-name {
     color: #6869ac;
     letter-spacing: -.04em;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     line-height: 28px
@@ -8160,7 +8162,7 @@ textarea.w-select {
     background-color: #fff;
     border-radius: 7px;
     padding: 12px 20px;
-    font-family: neue-haas-grotesk-display, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700
 }
@@ -8196,7 +8198,7 @@ textarea.w-select {
 }
 
 .field-label {
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400
 }
 
@@ -8222,7 +8224,7 @@ textarea.w-select {
     color: #fff;
     background-color: transparent;
     padding: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 700;
     line-height: 30px
@@ -8231,7 +8233,8 @@ textarea.w-select {
 .nextbutton-text {
     background-color: transparent;
     padding: 0;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 30px
@@ -8340,7 +8343,7 @@ textarea.w-select {
     border: 1px #000;
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     line-height: 28px
 }
@@ -8348,7 +8351,7 @@ textarea.w-select {
 .input-label {
     color: #fff;
     margin-bottom: 70px;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     line-height: 48px
 }
@@ -8372,7 +8375,7 @@ textarea.w-select {
 .success-message-2 {
     color: #fff;
     background-color: #000;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -8821,7 +8824,7 @@ textarea.w-select {
     border-bottom-left-radius: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400
 }
 
@@ -9808,7 +9811,7 @@ textarea.w-select {
     border-radius: 5px;
     margin-bottom: 0;
     padding: .5rem .75rem;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .2)
@@ -9840,7 +9843,7 @@ textarea.w-select {
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
     padding-top: .75rem;
     padding-bottom: .75rem;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow: auto
 }
 
@@ -9976,7 +9979,7 @@ textarea.w-select {
 }
 
 .form_checkbox-label.text-size-small {
-    font-family: neue-haas-grotesk-text, sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 .form_field-wrapper {
@@ -9989,7 +9992,7 @@ textarea.w-select {
     color: var(--\<unknown\|relume-variable-color-neutral-2\>);
     text-align: center;
     padding: .75rem 1.5rem;
-    font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none
 }
 
@@ -10161,14 +10164,14 @@ textarea.w-select {
 
 .text-block-4 {
     color: #fff;
-    font-family: neue-haas-grotesk-text, sans-serif;
+font-family: 'Poppins', sans-serif;
     font-size: 1rem
 }
 
 .text-block-5,
 .text-block-6 {
     color: #fff;
-    font-family: neue-haas-grotesk-text, sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 
 .div-block-16 {
