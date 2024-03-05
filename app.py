@@ -161,6 +161,6 @@ def dashboard():
         # return render_template('dashboard.html',username=username)
     return render_template('login.html')
 
-if __name__ == '__main__':
-    create_tables()
-    app.run(debug=False,host='0.0.0.0')
+# if __name__ == '__main__':
+#     create_tables()
+#     app.run(debug=False,host='0.0.0.0')
