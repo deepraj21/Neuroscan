@@ -16,10 +16,6 @@ import requests
 import plotly.graph_objects as go
 import urllib.request
 import json
-import gdown
-import tensorflow as tf
-from tensorflow.keras.models import load_model
-from io import BytesIO
 
 app = Flask(__name__)
 
@@ -67,32 +63,7 @@ testing_dir = os.path.join(base_dir, 'testing')
 
 train_generator, validation_generator, test_generator = train_val_generators(training_dir, validation_dir, testing_dir)
 
-# model = tf.keras.models.load_model('brain_tumor.h5')
-
-file_id = '1EpRTDNfzM2kDeuG8rURfbkmh7OwFo3SS'
-
-
-# Create a direct download link from the file ID
-# url = f'https://drive.google.com/file/d/1EpRTDNfzM2kDeuG8rURfbkmh7OwFo3SS/view?usp=sharing'
-
-# file_id = 'YOUR_FILE_ID'
-output_file = 'brain_tumor.h5'
-
-# Check if the file already exists locally
-if not os.path.exists(output_file):
-    # Create a direct download link from the file ID
-    url = f'https://drive.google.com/uc?id={file_id}'
-
-    # Download the file from Google Drive into memory
-    response = gdown.download(url, quiet=False)
-
-    # Load the model using TensorFlow Keras directly from memory
-    model_bytes = BytesIO(response.read())
-    model = load_model(model_bytes)
-else:
-    # Load the model directly from the existing file
-    model = tf.keras.models.load_model(output_file)
-
+model = tf.keras.models.load_model('brain_tumor.h5')
 
 def prediction(YOUR_IMAGE_PATH):
     img = image.load_img(YOUR_IMAGE_PATH, target_size=(150, 150))
@@ -192,4 +163,4 @@ def dashboard():
 
 # if __name__ == '__main__':
 #     create_tables()
-#     app.run(debug=True)
+#     app.run(debug=False)
